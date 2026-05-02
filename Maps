@@ -1,0 +1,50 @@
+ #include<iostream>
+ #include<unordered_map>
+ #include<map>
+ //#include<multimap>
+using namespace std;
+int main(){
+
+
+  unordered_map<string, int> standard;
+  standard["Piyush"]=12;
+  standard["jain"]=10;
+  standard["Adi"]=6;
+
+  
+
+
+
+    
+    standard.insert({"amit",8});
+    standard.erase("Adi");
+    if(standard.find("Adi")!=standard.end()){
+      cout<<"found"<<endl;
+
+    }
+    else{
+      cout<<"Not found"<<endl;
+    }
+
+    // for (auto &pair : standard) {
+    //     cout << pair.first << " -> " << pair.second << endl;
+    // }
+    cout<<standard["Piyush"]<<endl;
+    cout<<standard["jain"]<<endl;
+    cout<<standard["Adi"]<<endl;
+    cout<<"count :"<<standard.count("Piyush")<<endl;
+    cout<<"exixits :"<<standard["piyush"]; 
+    cout<<"Size of map :"<<standard.size()<<endl;
+    if(!standard.empty()){
+      cout<<"Map is not empty"<<endl;
+    }
+    else{
+      cout<<"Map is empty"<<endl;
+    }
+
+    return 0;
+  } 
+
+
+
+  
